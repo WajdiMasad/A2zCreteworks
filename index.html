@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2Z Creteworks | Premium Concrete Contractor in Nova Scotia</title>
+  <meta name="description" content="A2Z Creteworks is Nova Scotia's premier concrete contractor specializing in high-end driveways, walkways, foundations, and premium flatwork.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Playfair Display for editorial headings, Inter for clean UI text -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Awwwards Style Overlays -->
+  <div class="noise-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">A2Z<span>Creteworks</span></a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Request Estimate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-content">
+      <div class="hero-label reveal-up">Nova Scotia Concrete Contractor</div>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="reveal-up">Building the</span></span>
+        <span class="title-line"><span class="reveal-up"><i>Foundation</i> for</span></span>
+        <span class="title-line"><span class="reveal-up">Your Standard</span></span>
+        <span class="title-line"><span class="reveal-up">Of Living.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up">Specializing in high-end driveways, architectural flatwork, and structural foundations built to endure every Atlantic season.</p>
+      
+      <div class="reveal-up">
+        <a href="#contact" class="btn btn-primary btn-lg">Request an Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST & CERTIFICATION STRIP -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-items reveal-up">
+        <div class="trust-item">
+          <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Fully Licensed & Insured
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          NS Construction Safety Certified
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2-9 5 18 3-9h4"></path></svg>
+          Serving All of Nova Scotia
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Residential & Commercial
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="bg-text">SERVICES</div>
+    <div class="container">
+      <div class="section-intro">
+        <div class="section-label reveal-up">Our Expertise</div>
+        <h2 class="section-title reveal-up">Every job, done right from the ground up.</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="images/driveway.jpg" alt="Premium Concrete Driveway">
+          </div>
+          <div class="service-body">
+            <h3>Driveways</h3>
+            <p>Built to handle the weight of modern living and the freeze-thaw cycles of Nova Scotia winters. Proper grading, heavy reinforcement, and a flawless finish.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1617408524056-1510660dcf74?w=600&h=400&fit=crop" alt="Concrete Walkway Construction">
+          </div>
+          <div class="service-body">
+            <h3>Sidewalks & Walkways</h3>
+            <p>Clean lines, calculated slopes, and premium drainage. We pour walkways that define the approach to your property with absolute precision.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="images/steps.jpg" alt="Concrete Steps">
+          </div>
+          <div class="service-body">
+            <h3>Steps & Stairs</h3>
+            <p>Formed structural steps that act as permanent architecture for your home. Built solid, perfectly level, and designed to outlast the building itself.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="images/patio.jpg" alt="Outdoor Patio Pad">
+          </div>
+          <div class="service-body">
+            <h3>Patios & Pads</h3>
+            <p>Seamless outdoor living spaces and heavy-duty structural pads for garages or outbuildings. Engineered for immense load bearing.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1706067721099-025a4dbe7d3e?w=600&h=400&fit=crop" alt="Foundation Pouring">
+          </div>
+          <div class="service-body">
+            <h3>Foundations & Footings</h3>
+            <p>The critical element of any build. We execute foundation pours with exact tolerances to ensure the framing phase is flawless.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card reveal-up">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1642799288307-18f77cc56cf4?w=600&h=400&fit=crop" alt="Concrete Repair Work">
+          </div>
+          <div class="service-body">
+            <h3>Repairs & Replacement</h3>
+            <p>We don't do patches. We demolish failing concrete, diagnose the sub-base issue, and pour a new, permanent solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINISHES -->
+  <section id="finishes" class="finishes about">
+    <div class="container">
+      <div class="about-layout finishes-layout">
+        <div class="about-text reveal-up">
+          <div class="section-label">Architectural Finishes</div>
+          <h2 class="section-title">Surface profiles.</h2>
+          <p class="finishes-intro">We provide three distinct concrete finishes, tailored to the specific functional and aesthetic demands of your project.</p>
+          
+          <div class="finish-list">
+            <div class="finish-item">
+              <h3>Light Broom Finish</h3>
+              <p>The industry standard for outdoor flatwork. A calculated micro-texture that ensures critical slip resistance in Atlantic weather, cleanly pulled for a modern, uniform aesthetic.</p>
+            </div>
+            <div class="finish-item">
+              <h3>Smooth / Power Trowel</h3>
+              <p>A highly refined, glass-like surface. Primarily executed on garage slabs, indoor flooring, and structural pads. It eliminates dusting and is incredibly simple to sweep or wash.</p>
+            </div>
+            <div class="finish-item">
+              <h3>Exposed Aggregate</h3>
+              <p>A premium decorative application. We strip away the top matrix of cement to reveal the natural, embedded stone beneath. It offers immense durability and a high-end textured look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image finishes-image reveal-up">
+          <img src="images/finishes.jpg.webp" alt="Concrete Finishes Comparison: Broomed, Smooth, Exposed Aggregate">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block reveal-up">
+          <div><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span></div>
+          <div class="stat-desc">Locally Owned & Operated</div>
+        </div>
+        <div class="stat-block reveal-up">
+          <div><span class="stat-number" data-target="0">0</span></div>
+          <div class="stat-desc">Corners Cut</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="bg-text">METHODOLOGY</div>
+    <div class="container">
+      <div class="section-intro section-intro--center reveal-up">
+        <div class="section-label">Methodology</div>
+        <h2 class="section-title">The A2Z Standard.</h2>
+        <p class="section-sub">We don't guess. We follow a strict, proven methodology on every site to ensure structural integrity and a perfect finish.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal-up">
+          <span class="process-num">01</span>
+          <h3>Consultation</h3>
+          <p>We review your site constraints, discuss load requirements, and provide a transparent, line-item estimate.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">02</span>
+          <h3>Prep & Forming</h3>
+          <p>The foundation of the foundation. We excavate, establish drainage, compact the sub-base, and build rigid forms.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">03</span>
+          <h3>The Pour</h3>
+          <p>Executing the pour under optimal conditions. We manage the mix, vibrate for density, and screed for perfect leveling.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">04</span>
+          <h3>Finish & Cure</h3>
+          <p>We apply your chosen finish, cut deep control joints to manage expansion, and enforce a strict curing protocol.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="bg-text">A2Z CRETEWORKS</div>
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image reveal-up">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=1000&fit=crop" alt="Concrete Crew Working">
+        </div>
+        <div class="about-text reveal-up">
+          <div class="section-label">About A2Z</div>
+          <h2 class="section-title">We are not a volume builder. That's the point.</h2>
+          <p>A2Z Creteworks is a specialized concrete crew operating out of Nova Scotia. We deliberately limit our project intake to ensure the owners are on-site, holding the trowel, and overseeing the pour on every single job.</p>
+          <p>When you hire a massive firm, you're paying for their salespeople and their overhead. When you hire us, you are communicating directly with the craftsmen building your driveway.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY A2Z -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-card reveal-up">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3>Structural Integrity</h3>
+          <p>We refuse to pour thin slabs. We use a higher MPA mix and tighter rebar spacing than code requires.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M12 16v-8M8 12h8"></path></svg>
+          </div>
+          <h3>Transparent Pricing</h3>
+          <p>Our pricing is honest. We detail the material costs versus labor, so you understand exactly what you are investing in.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"></path></svg>
+          </div>
+          <h3>Immaculate Sites</h3>
+          <p>Construction is chaotic; your property shouldn't be. We tarp adjacent areas and perform a surgical cleanup daily.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal-up">
+          <blockquote>
+            <p>"They showed up precisely when they said they would, executed what they quoted, and the structural integrity is obvious. The neighborhood has already asked for their contact."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <span class="author-name">Mike T.</span>
+            <span class="author-location">Dartmouth, NS</span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up">
+          <blockquote>
+            <p>"Our old front steps were crumbling and settling. A2Z tore them out and poured new ones that feel like they're anchored to bedrock. Fair economic value for premium work."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <span class="author-name">Sarah L.</span>
+            <span class="author-location">Halifax, NS</span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up">
+          <blockquote>
+            <p>"I contacted multiple contractors. A2Z was the only firm that conducted a thorough site inspection before issuing a quote. That told me everything I needed to know about their standards."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <span class="author-name">Dave R.</span>
+            <span class="author-location">Truro, NS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content reveal-up">
+      <h2>Ready to initiate your project?</h2>
+      <p>Contact us for a preliminary consultation. We'll evaluate the site, discuss structural requirements, and provide a transparent estimate.</p>
+      <a href="tel:9025805985" class="btn btn-primary btn-lg">Call 902-580-5985</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal-up">
+          <div class="section-label">Connect</div>
+          <h2 class="section-title">Start the conversation.</h2>
+          <p>Provide us with an overview of your requirements, and we will get back to you within one business day to discuss scheduling and logistics.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-item-label">Direct Line</span>
+              <a href="tel:9025805985">902-580-5985</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-label">Service Area</span>
+              <span>All of Nova Scotia</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-label">Operating Hours</span>
+              <span>Mon - Sat, 7:00am - 6:00pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal-up">
+          <h3>Request an Estimate</h3>
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(902) 555-0198">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="location">City / Town</label>
+                <input type="text" id="location" name="location" required placeholder="Halifax, NS">
+              </div>
+              <div class="form-group">
+                <label for="service">Project Category</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="driveway">Driveway</option>
+                  <option value="sidewalk">Sidewalk / Walkway</option>
+                  <option value="steps">Steps & Stairs</option>
+                  <option value="patio">Patio / Pad</option>
+                  <option value="foundation">Foundation / Footing</option>
+                  <option value="repair">Repair / Replacement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" required placeholder="Describe the scope of work..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-form btn-full btn-lg">Submit Request</button>
+            <p class="form-note">A representative will respond within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand reveal-up">
+          <a href="#" class="footer-logo">A2Z<span>Creteworks</span></a>
+          <p>Premium architectural flatwork and structural concrete for residential and commercial properties across Nova Scotia.</p>
+        </div>
+
+        <div class="footer-nav reveal-up">
+          <h4>Navigation</h4>
+          <a href="#services">Services</a>
+          <a href="#process">Methodology</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-services reveal-up">
+          <h4>Capabilities</h4>
+          <a href="#services">Structural Driveways</a>
+          <a href="#services">Architectural Walkways</a>
+          <a href="#services">Formed Stairs</a>
+          <a href="#services">Heavy-Duty Pads</a>
+          <a href="#services">Foundations</a>
+        </div>
+
+        <div class="footer-contact reveal-up">
+          <h4>Direct Contact</h4>
+          <a href="tel:9025805985" class="footer-phone">902-580-5985</a>
+          <p>Nova Scotia, Canada</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom reveal-up">
+        <p>&copy; <span id="year"></span> A2Z Creteworks. All rights reserved.</p>
+        <p>Built with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
