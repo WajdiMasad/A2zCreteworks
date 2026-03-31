@@ -139,6 +139,7 @@ a {
   line-height: 1.1;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
+  color: var(--text-primary);
 }
 
 .section-sub {
@@ -378,6 +379,7 @@ a {
   letter-spacing: 0.35em;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 32px;
   display: inline-block;
@@ -536,6 +538,7 @@ a {
   font-weight: 300;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
 }
@@ -545,6 +548,7 @@ a {
   font-size: clamp(2rem, 3.5vw, 3.5rem);
   background: var(--accent-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
