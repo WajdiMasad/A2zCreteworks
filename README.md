@@ -1,8 +1,31 @@
-# A2zCreteworks
+# 🏗️ A2Z Creteworks — Website
 
-Premium Concrete Contractor in Nova Scotia.
-This repository contains the front-end source code representing the Awwwards-Level 20-Year UX overhaul for A2Z Creteworks.
-- `index.html`: Main semantic markup
-- `style.css`: Luxury styling, clip-path reveals, and responsive grids
-- `script.js`: Interactive elements, magnetic buttons, and scroll observer physics
-- `images/`: High-resolution client and stock photography
+**Purpose:** Business website for A2Z Creteworks concrete services company
+
+---
+
+## 🚀 Quick Start
+
+Open `index.html` in a browser — static site, no server required.
+
+---
+
+## 📋 Services Covered
+
+- Driveways
+- Sidewalks
+- Steps
+- Patios
+- Foundations
+- Repairs
+
+---
+
+## 📋 Overview
+
+- Professional Unsplash images matched to each service category
+- Clean modern design
+
+---
+
+*Managed by Antigravity | Last worked: Mar 20, 2026*
