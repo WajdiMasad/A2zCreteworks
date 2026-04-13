@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A2Z Creteworks | Premium Concrete Contractor in Nova Scotia</title>
-  <meta name="description" content="A2Z Creteworks is Nova Scotia's premier concrete contractor specializing in high-end driveways, walkways, foundations, and premium flatwork.">
+  <title>A2Z Creteworks | Concrete Contractor Halifax &amp; Nova Scotia | Driveways, Foundations &amp; Flatwork</title>
+  <meta name="description" content="A2Z Creteworks — Nova Scotia's premier concrete contractor. Specializing in driveways, exposed aggregate, broom-finish patios, steps, and structural foundations across Halifax, Dartmouth, Truro &amp; all of NS. Call 902-580-5985.">
   
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,18 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <!-- SEO & Social Meta Tags -->
-  <meta name="keywords" content="Concrete contractor Nova Scotia, Concrete driveways Halifax, exposed aggregate stairs, power trowel smooth finish, concrete foundations NS, A2Z Creteworks">
+  <meta name="keywords" content="concrete contractor Nova Scotia, concrete driveways Halifax, exposed aggregate concrete Halifax, broom finish concrete NS, power trowel finish, concrete foundations Halifax, concrete steps Nova Scotia, concrete patio Halifax, concrete repair Nova Scotia, A2Z Creteworks">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="A2Z Creteworks">
+  <meta http-equiv="content-language" content="en-CA">
+  <meta name="geo.region" content="CA-NS">
+  <meta name="geo.placename" content="Halifax, Nova Scotia, Canada">
+  <meta name="geo.position" content="44.6488;-63.5752">
+  <meta name="ICBM" content="44.6488, -63.5752">
   <link rel="canonical" href="https://a2zcreteworks.ca/">
+  <!-- Performance: preconnect Unsplash CDN, preload LCP hero -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1743130940758-622b8e6b4140?w=2000&h=1200&fit=crop&crop=center" fetchpriority="high">
   
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://a2zcreteworks.ca/">
@@ -29,30 +39,119 @@
   <meta name="twitter:description" content="Nova Scotia's elite concrete contractor. High-end driveways, structural foundations, and custom architectural finishes built to conquer every Atlantic season.">
   <meta name="twitter:image" content="https://a2zcreteworks.ca/images/driveway.jpg">
 
-  <!-- Schema.org JSON-LD for Local SEO -->
+  <!-- Schema.org JSON-LD — LocalBusiness + GeneralContractor -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "GeneralContractor",
-      "name": "A2Z Creteworks",
-      "image": "https://a2zcreteworks.ca/images/finishes.jpg.webp",
-      "@id": "https://a2zcreteworks.ca/",
-      "url": "https://a2zcreteworks.ca/",
-      "telephone": "902-580-5985",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "NS",
-        "addressCountry": "CA"
+  {
+    "@context": "https://schema.org",
+    "@type": ["GeneralContractor", "LocalBusiness"],
+    "name": "A2Z Creteworks",
+    "image": [
+      "https://a2zcreteworks.ca/images/finishes.jpg.webp",
+      "https://a2zcreteworks.ca/images/driveway.jpg",
+      "https://a2zcreteworks.ca/images/patio.jpg"
+    ],
+    "@id": "https://a2zcreteworks.ca/#business",
+    "url": "https://a2zcreteworks.ca/",
+    "telephone": "+19025805985",
+    "email": "ahmad@a2zcreteworks.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Halifax",
+      "addressRegion": "NS",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.6488,
+      "longitude": -63.5752
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }],
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Nova Scotia" },
+      { "@type": "City", "name": "Halifax" },
+      { "@type": "City", "name": "Dartmouth" },
+      { "@type": "City", "name": "Bedford" },
+      { "@type": "City", "name": "Truro" },
+      { "@type": "City", "name": "New Glasgow" },
+      { "@type": "City", "name": "Bridgewater" },
+      { "@type": "City", "name": "Antigonish" }
+    ],
+    "description": "A2Z Creteworks is Nova Scotia's premier concrete contractor. We specialize in high-end driveways, exposed aggregate, broom-finish patios, structural foundations, concrete steps, and flatwork across Halifax and all of Nova Scotia.",
+    "priceRange": "$$",
+    "hasMap": "https://maps.google.com/?q=Halifax,NS,Canada",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+19025805985",
+      "email": "ahmad@a2zcreteworks.ca",
+      "contactType": "customer service",
+      "areaServed": "CA-NS",
+      "availableLanguage": "en"
+    },
+    "knowsAbout": [
+      "Concrete driveways", "Exposed aggregate concrete", "Broom finish concrete",
+      "Concrete foundations", "Concrete steps and stairs", "Power trowel finish",
+      "Concrete flatwork", "Concrete patio", "Concrete repair"
+    ],
+    "serviceType": [
+      "Concrete Driveways", "Concrete Walkways", "Concrete Steps & Stairs",
+      "Concrete Patios & Pads", "Concrete Foundations & Footings", "Concrete Repairs & Replacement"
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema — targets featured snippet / People Also Ask -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a concrete driveway cost in Nova Scotia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Concrete driveway costs in Nova Scotia vary based on square footage, thickness, reinforcement, and finish. A2Z Creteworks provides transparent, itemized estimates with no hidden fees. Call 902-580-5985 or submit an estimate request online for a site-specific quote."
+        }
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 44.6488,
-        "longitude": -63.5752
+      {
+        "@type": "Question",
+        "name": "What types of concrete finishes does A2Z Creteworks offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A2Z Creteworks offers three concrete finishes: (1) Light Broom Finish — the standard for outdoor flatwork, providing slip resistance in Atlantic weather; (2) Smooth / Power Trowel — a refined, glass-like surface ideal for garages and interior slabs; (3) Exposed Aggregate — a premium decorative finish that reveals embedded stone for a high-end, durable surface."
+        }
       },
-      "areaServed": "Nova Scotia",
-      "description": "A2Z Creteworks is Nova Scotia's premier concrete contractor specializing in high-end driveways, walkways, foundations, and premium flatwork.",
-      "priceRange": "$$"
-    }
+      {
+        "@type": "Question",
+        "name": "Does A2Z Creteworks serve areas outside of Halifax, Nova Scotia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A2Z Creteworks serves all of Nova Scotia, including Halifax, Dartmouth, Bedford, Truro, New Glasgow, Bridgewater, and Antigonish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a concrete driveway last in Nova Scotia winters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A properly installed concrete driveway can last 30 to 50 years in Atlantic Canada. A2Z Creteworks uses a higher MPA concrete mix and tighter rebar spacing than provincial code requires, specifically engineered to withstand Nova Scotia's severe freeze-thaw cycles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is A2Z Creteworks licensed and insured in Nova Scotia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A2Z Creteworks is fully licensed and insured, and NS Construction Safety certified. Every project is personally owner-supervised to ensure structural integrity and a flawless finish."
+        }
+      }
+    ]
+  }
   </script>
 </head>
 <body>
@@ -145,7 +244,7 @@
         <!-- Card 1 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="images/driveway.jpg" alt="High-end custom concrete driveway pouring in Nova Scotia by A2Z Creteworks">
+            <img src="images/driveway.jpg" alt="High-end custom concrete driveway pouring in Nova Scotia by A2Z Creteworks" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Driveways</h3>
@@ -156,7 +255,7 @@
         <!-- Card 2 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1617408524056-1510660dcf74?w=600&h=400&fit=crop" alt="Architectural concrete walkway construction and premium flatwork in Halifax">
+            <img src="https://images.unsplash.com/photo-1617408524056-1510660dcf74?w=600&h=400&fit=crop" alt="Architectural concrete walkway construction and premium flatwork in Halifax" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Sidewalks & Walkways</h3>
@@ -167,7 +266,7 @@
         <!-- Card 3 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="images/steps.jpg" alt="Formed structural concrete steps and stairs built to withstand Atlantic weather">
+            <img src="images/steps.jpg" alt="Formed structural concrete steps and stairs built to withstand Atlantic weather" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Steps & Stairs</h3>
@@ -178,7 +277,7 @@
         <!-- Card 4 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="images/patio.jpg" alt="Seamless outdoor concrete patio pads engineered for heavy structural load bearing">
+            <img src="images/patio.jpg" alt="Seamless outdoor concrete patio pads engineered for heavy structural load bearing" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Patios & Pads</h3>
@@ -189,7 +288,7 @@
         <!-- Card 5 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1706067721099-025a4dbe7d3e?w=600&h=400&fit=crop" alt="Precision structural concrete foundation and footing pouring in Nova Scotia">
+            <img src="https://images.unsplash.com/photo-1706067721099-025a4dbe7d3e?w=600&h=400&fit=crop" alt="Precision structural concrete foundation and footing pouring in Nova Scotia" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Foundations & Footings</h3>
@@ -200,7 +299,7 @@
         <!-- Card 6 -->
         <div class="service-card reveal-up">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1642799288307-18f77cc56cf4?w=600&h=400&fit=crop" alt="Expert concrete demolition, repair, and replacement contractor in NS">
+            <img src="https://images.unsplash.com/photo-1642799288307-18f77cc56cf4?w=600&h=400&fit=crop" alt="Expert concrete demolition, repair, and replacement contractor in NS" loading="lazy" decoding="async">
           </div>
           <div class="service-body">
             <h3>Repairs & Replacement</h3>
@@ -236,7 +335,7 @@
           </div>
         </div>
         <div class="about-image finishes-image reveal-up">
-          <img src="images/finishes.jpg.webp" alt="A2Z Creteworks Concrete Finishes Comparison: Light Broomed, Smooth Power Trowel, and Exposed Aggregate">
+          <img src="images/finishes.jpg.webp" alt="A2Z Creteworks Concrete Finishes Comparison: Light Broomed, Smooth Power Trowel, and Exposed Aggregate" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -299,7 +398,7 @@
     <div class="container">
       <div class="about-layout">
         <div class="about-image reveal-up">
-          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=1000&fit=crop" alt="A2Z Creteworks elite concrete crew pouring and finishing a slab in Nova Scotia">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=1000&fit=crop" alt="A2Z Creteworks elite concrete crew pouring and finishing a slab in Nova Scotia" loading="lazy" decoding="async">
         </div>
         <div class="about-text reveal-up">
           <div class="section-label">About A2Z</div>
