@@ -585,10 +585,15 @@
 
         <div class="contact-form reveal-up">
           <h3>Request an Estimate</h3>
-          <form id="contact-form" action="https://formsubmit.co/info@a2zcreteworks.ca" method="POST">
-            <input type="hidden" name="_subject" value="New Estimate Request — A2Z Creteworks">
-            <input type="hidden" name="_next" value="https://a2zcreteworks.ca/#contact">
-            <input type="hidden" name="_captcha" value="false">
+          <div id="form-success" style="display:none; padding: 32px; text-align:center; border: 1px solid var(--border-glow); background: var(--bg-elevated);">
+            <p style="color: var(--accent); font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 12px;">Request Received.</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">We'll be in touch within one business day.</p>
+          </div>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="935818f8-5690-416b-9e13-de93ad0c62f2">
+            <input type="hidden" name="subject" value="New Estimate Request — A2Z Creteworks">
+            <input type="hidden" name="from_name" value="A2Z Creteworks Website">
+            <input type="checkbox" name="botcheck" style="display:none;">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name</label>

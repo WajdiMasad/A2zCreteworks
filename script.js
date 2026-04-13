@@ -153,28 +153,57 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // --- Contact Form UX ---
+  // --- Contact Form — Web3Forms AJAX ---
   const contactForm = document.getElementById('contact-form');
+  const formSuccess = document.getElementById('form-success');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener('submit', async function (e) {
       e.preventDefault();
 
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      
-      btn.textContent = 'Request Submitted';
-      btn.style.background = 'var(--accent-dark)';
-      btn.style.color = '#fff';
+
+      btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.style.color = '';
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const json = await res.json();
+
+        if (json.success) {
+          contactForm.style.display = 'none';
+          if (formSuccess) formSuccess.style.display = 'block';
+        } else {
+          btn.textContent = 'Something went wrong — try again';
+          btn.style.background = '#c0392b';
+          btn.style.color = '#fff';
+          btn.disabled = false;
+          setTimeout(function () {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 4000);
+        }
+      } catch (err) {
+        btn.textContent = 'Network error — try again';
+        btn.style.background = '#c0392b';
+        btn.style.color = '#fff';
         btn.disabled = false;
-        contactForm.reset();
-      }, 3500);
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 4000);
+      }
     });
   }
 
