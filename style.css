@@ -254,21 +254,17 @@ a {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.nav-logo span {
-  font-family: var(--font-body);
-  font-weight: 300;
-  font-size: 0.95rem;
-  margin-left: 6px;
-  color: var(--text-secondary);
-  letter-spacing: 0.05em;
+.nav-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
+
 
 .nav-links {
   list-style: none;
